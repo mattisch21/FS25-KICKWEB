@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blau{
+height: 100px;
+width: 100px;
+background-color: blue;
+
+}
+
+@media screen and (max-width: 640px){
+    div.blau{
+        border-radius: 50%;
+    }
+    div.container{
+    display: flex;
+    align-items: end;
+
+    }
+    
+}

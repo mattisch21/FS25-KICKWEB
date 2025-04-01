@@ -1,0 +1,58 @@
+@font-face {
+    font-family: VG5000;
+    src: url(fonts/VG5000-Regular_web.woff2) format("woff2");
+}
+ @font-face {
+    font-family: Terminal;
+    src: url(fonts/terminal-grotesque-webfont.woff2) format("woff2");
+ }
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Intro{
+font-family: Terminal;
+font-weight: 300;
+text-align: center;
+font-size: 2vw;
+margin: 0%;
+
+}
+
+.fuji{
+    margin: 0%;
+background-color: rgb(253, 189, 255);
+font-family: Terminal;
+font-weight: 900;
+font-size: 23vw;
+}
+.fujismall{
+font-family: Terminal;
+font-weight: 200;
+font-size: 7vw;
+text-align: center;
+}
+.fujitopdown{
+
+    font-family: Terminal;
+    font-weight: 200;
+    font-size: 7vw;
+    text-align: center;
+    color: red;
+    background-color: rgb(253, 189, 255);
+}
+.strophe1{
+    font-family: Terminal;
+    font-weight: 200;
+    font-size: 2vw;
+}
+.strophe2{
+    font-family: Terminal;
+    font-weight: 200;
+    font-size: 2vw;
+    text-align: right;
+    background-color: rgb(253, 189, 255);
+}

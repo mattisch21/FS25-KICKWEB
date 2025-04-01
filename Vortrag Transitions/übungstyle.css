@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+
+}
+
+.object{
+height: 400px;
+width: 400px;
+background-color: red;
+transition-property: all;
+transition-duration: 600ms;
+transition-timing-function: ease-in;
+}
+
+.object:hover{
+rotate: 90deg;
+background-color: blue;
+}

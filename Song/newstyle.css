@@ -1,0 +1,12 @@
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.item{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
