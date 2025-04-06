@@ -2,3 +2,42 @@
     margin: 0;
     padding: 0;
 }
+
+.About, .Sprint1, .Sprint2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border: solid 4px black;
+    margin: 50px;
+    border-radius: 20px;
+    background-color: white;
+    transition: all 300ms ease;
+
+}
+.About:hover, .Sprint1:hover, .Sprint2:hover{
+    background-color: black;
+    color:white;
+    transition: all 300ms ease;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+
+}
+.container{
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+max-height: 100vh;
+}
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50pt;
+}
+
