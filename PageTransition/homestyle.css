@@ -1,0 +1,130 @@
+
+.homepage {
+    z-index: 2;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-height: 100vh;
+  }
+  #homepage {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    z-index: 2; /* über Seite B */
+    pointer-events: auto;
+    /*transition: z-index 0s linear 0.7s; /* z-index verzögert, damit Slide fertig ist */
+    max-height: 100vh;
+  }
+  
+  #homepage.hidden {
+    pointer-events: none;
+    z-index: 0;
+  }
+  .gridoben, .gridunten {
+    position: absolute;
+    width: 100vw;
+    height: 50vh;
+    left: 0;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2.5fr 8.5fr 2.5fr 2fr 5.5fr 1fr;
+    transition:
+    transform 0.8s ease, 
+    grid-template-columns 0.3s ease-in-out;
+  }
+  
+  
+  .gridunten {
+    bottom: 0;
+    background: #ffffff;
+  }
+  
+.gridoben{
+    height: 50vh;
+    background: #ffffff;
+}
+svg {
+    width: 100%;
+    height: 50vh;    
+    }
+
+.box{
+        border: 2px solid rgb(0, 0, 0); 
+        overflow: hidden;}
+
+.hide{
+    display: none;
+}
+
+.gridoben:has(.first:hover){
+    grid-template-columns: 6fr 0.5fr 1fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+
+.gridoben:has(.second:hover){
+    grid-template-columns: 0.5fr 6fr 1fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+
+.gridoben:has(.third:hover){
+    grid-template-columns:  0.5fr 0.5fr 6fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+.gridoben:has(.fourth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 6fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+.gridoben:has(.fifth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 6fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+.gridoben:has(.sixth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 6fr 1.5fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+.gridoben:has(.seventh:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 0.5fr 6fr 0.5fr;
+    background-color: rgb(0, 255, 42);
+}
+.gridoben:has(.eigth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 0.5fr 1.5fr 6fr;
+    background-color: rgb(0, 255, 42);
+}
+
+.gridunten:has(.first:hover){
+    grid-template-columns: 6fr 0.5fr 1fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+
+.gridunten:has(.second:hover){
+    grid-template-columns: 0.5fr 6fr 1fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+
+.gridunten:has(.third:hover){
+    grid-template-columns:  0.5fr 0.5fr 6fr 2fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+.gridunten:has(.fourth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 6fr 1fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+.gridunten:has(.fifth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 6fr 0.5fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+.gridunten:has(.sixth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 6fr 1.5fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+.gridunten:has(.seventh:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 0.5fr 6fr 0.5fr;
+    background-color: rgb(255, 0, 191);
+}
+.gridunten:has(.eigth:hover){
+    grid-template-columns:  0.5fr 0.5fr 1fr 2fr 1fr 0.5fr 1.5fr 6fr;
+    background-color: rgb(255, 0, 191);
+}
