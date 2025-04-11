@@ -16,7 +16,37 @@ html, body { height: 100%; overflow: hidden; }
 }
 
 
+#backbutton{
+    position: fixed;
+    height: 5vw;
+    width: 5vw;
+    top: 2rem;
+    left: 2rem;
+    background-color: rgb(163, 163, 163);
+    z-index: 1;
+    border: solid 3px black;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+#backbutton:hover{
+    background-color: rgb(223, 223, 223);
+    cursor: pointer;
+}
+
+#backbutton svg{
+    width: 3vw;
+    height: 3vw;
+    transition: all 0.2s ease;
+}
+
+#backbutton:hover svg{
+    width: 4vw;
+    height: 4vw;
+    transition: all 0.2s ease;
+}
 
 /* Slide-Effekte */
 .slide-top-out {

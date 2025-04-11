@@ -38,7 +38,7 @@
             border: 2px solid black;
             overflow: hidden;
             }
-.hide{
+.hideimg{
                 display: none;
             }
 .Zeile img{
@@ -85,3 +85,73 @@
             .Spalterechts:has(.Zeile.sixth:hover){
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr 9fr;
             }
+
+            @media screen and (max-width: 1180px){
+                .bilderseite{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr; 
+                    max-height: none; 
+                    transition-property: all;
+                transition-duration: 300ms;
+                transition-timing-function: ease;
+                }
+                .hideimg{
+                    display: grid;
+                }
+                .Spalterechts{
+                    display: none;
+                }
+                .Spaltelinks,
+                .Spaltemitte{
+                grid-template-rows: repeat(9, 1fr);
+                max-height: 150vh;
+                }
+            
+               
+                .Spaltelinks:has(.Zeile.first:hover),
+                .Spaltemitte:has(.Zeile.first:hover){
+                    grid-template-rows: 6.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.second:hover),
+                .Spaltemitte:has(.Zeile.second:hover){
+                    grid-template-rows: 1fr 6.5fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                } 
+                .Spaltelinks:has(.Zeile.third:hover),
+                .Spaltemitte:has(.Zeile.third:hover){
+                    grid-template-rows: 1fr 1fr 6.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.fourth:hover),
+                .Spaltemitte:has(.Zeile.fourth:hover){
+                    grid-template-rows: 1fr 1fr 1fr 6.5fr 1fr 1fr 1fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.fifth:hover),
+                .Spaltemitte:has(.Zeile.fifth:hover){
+                    grid-template-rows: 1fr 1fr 1fr 1fr 6.5fr 1fr 1fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.sixth:hover),
+                .Spaltemitte:has(.Zeile.sixth:hover){
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 6.5fr 1fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.seventh:hover),
+                .Spaltemitte:has(.Zeile.seventh:hover){
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 6.5fr 1fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.eigth:hover),
+                .Spaltemitte:has(.Zeile.eigth:hover){
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 6.5fr 1fr;
+                }
+                .Spaltelinks:has(.Zeile.nineth:hover),
+                .Spaltemitte:has(.Zeile.nineth:hover){
+                    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 6.5fr;
+                }
+                }
+                @media screen and (max-width: 512px){
+                    .bilderseite{
+                        display: grid;
+                        grid-template-columns: 1fr;
+                    }
+                #backbutton{
+                    width: 50px;
+                    height: 50px;
+                }
+                }
